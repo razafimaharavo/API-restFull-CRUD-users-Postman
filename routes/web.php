@@ -14,7 +14,7 @@ use App\Http\Controllers\UsersNakaController;
 |
 */
 
-Route::prefix('v1/users')->group(function(){
+Route::prefix('users')->group(function(){
     Route::get('/', [UsersNakaController::class, 'get']);
     Route::post('/', [UsersNakaController::class, 'create']);
     Route::get('/{id}', [UsersNakaController::class, 'getById']);
